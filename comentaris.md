@@ -42,6 +42,11 @@ Implementam es métodes per eliminar i update es contactes.
 
 Queda pendent per dilluns variables de entorno, pujar s'aplicació a heruku.
 
+
+### Dilluns 7 de març
 A des package.json, com que ara pujarem es projecte a heroku,
 afagirem un script que sigui start: app.js perque heroku mos demana
-que iniciem es proyecte amb 
+que iniciem es proyecte amb npm start.
+Important llevar d'es gitignore es default.json de config
+Instalam npm cors per evitar problemes de seguridad cross-origins resource sharing.
+[info cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

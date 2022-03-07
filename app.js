@@ -1,10 +1,15 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('cors');
 require('dotenv').config()
 const app = express();
 
 // conectar con la base de datos
 connectDB();
+
+// habilitamos cors en las cabeceras per fer peticions a heroku des
+// de netlify-axios
+app.use(cors());
 
 // middleware que intercepta las peticiones y parsea el json del
 // body para devolvérnoslo en forma de objeto.
