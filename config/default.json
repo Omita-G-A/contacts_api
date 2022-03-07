@@ -1,0 +1,4 @@
+{
+    "mongoURI" : "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.3ttmi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "topsecret"
+}
