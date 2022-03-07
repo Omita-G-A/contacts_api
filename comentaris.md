@@ -39,3 +39,9 @@ El login constará de un app.get y un app.post
 ### Divendres 4 de març
 
 Implementam es métodes per eliminar i update es contactes.
+
+Queda pendent per dilluns variables de entorno, pujar s'aplicació a heruku.
+
+A des package.json, com que ara pujarem es projecte a heroku,
+afagirem un script que sigui start: app.js perque heroku mos demana
+que iniciem es proyecte amb 

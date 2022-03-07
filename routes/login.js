@@ -11,7 +11,15 @@ const User = require('../models/User')
 // @route   GET api/login/:id
 // @desc    Obtener el usuario logueado
 // @access  Privado
-router.get('/', (req, res) => res.json({ user: 'el usuario logueado' }))
+router.get('/', auth, (req, res) => {
+
+
+})
+
+
+
+
+
 
 // @route   POST api/login/
 // @desc    Autentificar el usuario y generar un token
