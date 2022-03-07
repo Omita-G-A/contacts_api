@@ -33,19 +33,19 @@ router.post(
   async (req, res) => {
     const errors = validationResult(req)
     if (!errors.isEmpty()) {
-      return res.status(400).json(errors)
+      return res.status(200).json(errors)
     }
 
     const { email, password } = req.body;
     try {
       let user = await User.findOne({ email });
       if (!user) {
-        return res.status(400).json({ msg: "credenciales no válidas" });
+        return res.status(200).json({ msg: "credenciales no válidas" });
       }
 
       const isMatch = await bcrypt.compare(password, user.password);
       if (!isMatch) {
-        return res.status(400).json({ msg: "las contraseñas no coinciden" });
+        return res.status(200).json({ msg: "las contraseñas no coinciden" });
       }
 
       // para generar un token reutilizamos el código de users en registrarse
